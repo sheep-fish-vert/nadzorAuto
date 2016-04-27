@@ -53,6 +53,12 @@ function buttonPrint(){
 $(document).ready(function(){
     buttonPrint();
     googleMap('mapInit'); //id
+
+    $('.header-button').click(function(event) {
+        event.preventDefault();
+        $('.form-block .left-side .send-form .contact-form-row .contact-form-item .pl-name').focus();
+         $('html , body').stop().animate({scrollTop:$('.form-block').offset().top},800);
+    });
 });
 
 $(window).load(function(){
