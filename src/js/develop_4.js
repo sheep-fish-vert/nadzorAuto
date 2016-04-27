@@ -44,6 +44,8 @@ function buttonPrint(){
     $(".icon-print").click(function () {
         print();
     });
+
+    $('#download').attr('href',docs);
 }
 
 $(document).ready(function(){
