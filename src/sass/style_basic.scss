@@ -80,3 +80,19 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 
 /*/fonts*/
+
+
+@media print {
+    header{background-color: #000 !important;}
+    header .mbox .header-button{display: none !important;}
+    .form-block,.hidden-block,.footer,.middle-text,.scroll-buttons-right,.scroll-buttns li{display: none !important;}
+    .scroll-buttns li{border:none !important;}
+    .scroll-main.horizontal-only.jspScrollable{overflow: visible !important;width: auto !important;}
+    .jspContainer{width: auto !important;height: auto !important;overflow: visible !important;}
+    .jspPane{width: auto !important;position: static !important;}
+    .scroll-content{width: auto !important;height: auto !important;}
+    .jspVerticalBar{display: none !important;}
+    .scroll-item{display: block !important; width: 100% !important;margin-bottom: 20px !important;}
+    .jspHorizontalBar{display: none !important;}
+    .scroll-buttons{margin-bottom: 30px;}
+}
