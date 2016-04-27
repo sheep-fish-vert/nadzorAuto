@@ -149,7 +149,7 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    //$('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
     //animationBlock($('.setion-animate'));
@@ -157,5 +157,5 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 
-    $('.footer_placeholder').height($('.footer').outerHeight());
+    //$('.footer_placeholder').height($('.footer').outerHeight());
 });
