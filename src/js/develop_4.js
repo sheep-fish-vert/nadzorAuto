@@ -44,8 +44,14 @@ function googleMap(mapWrap){
     initialize();
 }
 
+function buttonPrint(){
+    $(".icon-print").click(function () {
+        print();
+    });
+}
 
 $(document).ready(function(){
+    buttonPrint();
     googleMap('mapInit'); //id
 });
 
