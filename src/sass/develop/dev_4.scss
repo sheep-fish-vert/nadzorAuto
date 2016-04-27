@@ -11,3 +11,13 @@ header{background-color: #145e8c;
     }
 }
 /*header*/
+
+/*middle-text*/
+.middle-text{background:transparent url('/images/middle-text-bg.jpg') center center no-repeat;background-size: cover;
+    .mbox{display: flex;justify-content:center;align-items:center;flex-direction:column;height: 245px;
+        &:after{display: none;}
+    }
+    .middle-text-text{font-size: 22px;color: #145e8c;text-transform: uppercase;}
+    .middle-text-tel{}
+}
+/*/middle-text*/
