@@ -2,15 +2,52 @@
 
     <div id="call_success">
         <div class="call-success">
-             <div class="call_success">
-                 <div class="call-title">Спасибо за заявку!</div>
-                 <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
-             </div>
+            <div class="call_success">
+                <div class="call-title">Спасибо за заявку!</div>
+                <div class="call-">Мы свяжемся с Вами в ближайшее время</div>
+            </div>
         </div>
     </div>
 
     <div id="call-popup">
-        
+        <div class="left-side">
+            <form action="ajax.php" name="form-send" class="send-form">
+                <div class="contact-form-title">
+                    <h5>Оставьте заявку</h5>
+                    <div class="sub-text">и юрист автонадзора свяжется <br/> с Вами в течение <i>  15 минут  </i> и даст <b>БЕСПЛАТНУЮ</b> <br/>                        консультацию по вашему вопросу </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя" class=" pl-name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш контактный телефон" class="tel-mask pl-phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <textarea name="message" required="required" class="mas-send pl-mass" placeholder="Опишите вашу ситуацию"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item-submit">
+                        <button type="submit" class="contact-submit">
+                            <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
 </div>
