@@ -1,47 +1,64 @@
 <section id="form-block" class="form-block">
     <div class="form-wrap">
         <div class="mbox">
-            <div class="conteiner">
+            <div class="conteiner cfix">
                 <div class="right-side">
                     <div class="convert">
-                        <div class="top-part"></div>
-                        <div class="bot-part"></div>
+                        <div class="top-part">
+                            <div class="head-text">Если вы столкнулись с:</div>
+                            <ul>
+                                <li>Возвратом авто в автосалон / частному лицу;</li>
+                                <li>Возвратом налога на авто;</li>
+                                <li>Возвратом страховки на авто;</li>
+                                <li>Черным автосалонам;</li>
+                                <li>Мошенничеством с авто;</li>
+                                <li>ДТП;</li>
+                            </ul>
+                        </div>
+                        <div class="bot-part">
+                            <div class="text-block">
+                                <p>Проект реализован в рамках:</p>
+                                <h6>ФЕДЕРАЛЬНОГО ЗАКОНА РОССИЙСКОЙ ФЕДЕРАЦИИ от 21 ноября 2011 г. N 324-ФЗ</h6>
+                                <p>“О бесплатной юридической помощи в Российской Федерации”</p>
+                                <b>(Принят Государственной Думой 2 ноября 2011 года и Одобрен Советом Федерации 9 ноября 2011 года)</b>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="left-side">
                     <form action="ajax.php" name="form-send" class="send-form">
                         <div class="contact-form-title">
-                            <h5>Lorem ipsum dolor.</h5>
-                            <div class="sub-text"> </div>
+                            <h5>Оставьте заявку</h5>
+                            <div class="sub-text">и юрист автонадзора свяжется <br/> с Вами в течение <i>  15 минут  </i> и даст <b>БЕСПЛАТНУЮ</b> <br/> консультацию по вашему вопросу </div>
                         </div>
                         <div class="contact-form-row cfix">
                             <div class="contact-form-item">
                                 <div class="contact-form-item-input form_row">
                                     <div class="form_input">
-                                        <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                                        <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя" class=" pl-name" >
                                     </div>
                                 </div>
                             </div>
                             <div class="contact-form-item">
                                 <div class="contact-form-item-input form_row">
                                     <div class="form_input">
-                                        <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                                        <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш контактный телефон" class="tel-mask pl-phone" >
                                     </div>
                                 </div>
                             </div>
                             <div class="contact-form-item">
                                 <div class="contact-form-item-input form_row">
                                     <div class="form_input">
-                                        <textarea name="message" class="mas-send"></textarea>
+                                        <textarea name="message" required="required" class="mas-send pl-mass" placeholder="Опишите вашу ситуацию" ></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="contact-form-row cfix">
-                            <div class="contact-form-item">
+                            <div class="contact-form-item-submit">
                                 <button type="submit" class="contact-submit">
-                        <span>Отправить заявку</span>
-                    </button>
+                                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                                </button>
                             </div>
                         </div>
                     </form>
