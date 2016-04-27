@@ -49,7 +49,9 @@
                     :-ms-input-placeholder {color: red;}
             }
             .contact-form-item-submit{width: 100%; display: flex;  padding: 25px 0; justify-content: center;}
-            .contact-submit{ width: 158px; height: 43px; margin: 0 auto; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.429;font-size: 14px; font-family: "Roboto Condensed"; text-align: center; border-radius: 3px; outline: none; background-color: #0071bc; border: none; cursor: pointer; }
+            .contact-submit{ transition: all 0.3s; width: 158px; height: 43px; margin: 0 auto; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.429;font-size: 14px; font-family: "Roboto Condensed"; text-align: center; border-radius: 3px; outline: none; background-color: #0071bc; border: none; cursor: pointer; 
+                &:hover{background-color: #055B94;  }
+            }
         }
     }
 }
