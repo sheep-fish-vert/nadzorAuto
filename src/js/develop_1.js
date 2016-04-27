@@ -13,7 +13,7 @@
         /* variables */
 
         $('.scroll-item').each(function(){
-
+            console.log('asdasd');
             scrollContentWidth = scrollContentWidth + Math.round($(this).outerWidth())+5;
 
             if(itemHeight < ($(this).height() + 70)){
