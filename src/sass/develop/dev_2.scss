@@ -52,3 +52,10 @@
         }
     }
 }
+
+#call_success{ width: 400px; height: auto; 
+    .call_success{ width: 100%; padding: 20px;  text-align: center; width: 100%; font-family: "Roboto Condensed";
+        .call-title{ font-size: 26px; font-weight: 500; padding-bottom: 10px; }   
+        .subtitle{ font-size: 18px; font-weight: 400; }     
+    }
+}
