@@ -16,8 +16,8 @@
 
             scrollContentWidth = scrollContentWidth + Math.round($(this).outerWidth())+5;
 
-            if(itemHeight < ($(this).height() + 50)){
-                itemHeight = ($(this).height() + 50);
+            if(itemHeight < ($(this).height() + 70)){
+                itemHeight = ($(this).height() + 70);
             }
 
             point++;
