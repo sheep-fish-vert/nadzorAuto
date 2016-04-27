@@ -264,6 +264,8 @@ function someAjax(item, someUrl, successFunc, someData){
 */
 
 $(document).ready(function(){
+    
+    validate('.send-form-popup', {submitFunction:validationCall});
 
    validate('.send-form', {submitFunction:validationCall});
    Maskedinput();
