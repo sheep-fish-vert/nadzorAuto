@@ -1,5 +1,5 @@
 /*header*/
-header{background-color: #145e8c;
+header{background-color: #145e8c;position: fixed;width: 100%;left: 0;top: 0;backface-visibility: hidden;z-index: 10;
     .mbox{height: 78px;display: flex;justify-content:space-between;align-items:center;
         &:after{display: none;}
         a{color: white;text-decoration: none;font-size: 24px;margin-left: 10px;}
@@ -10,6 +10,7 @@ header{background-color: #145e8c;
         .header-right{justify-content:flex-end;align-items:center;flex-direction:row;width: 40%;display: flex;}
     }
 }
+.main{padding-top: 78px;}
 /*header*/
 
 /*middle-text*/

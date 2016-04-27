@@ -1,6 +1,16 @@
 function googleMap(mapWrap){
     function initialize() {
-        var myLatlng = new google.maps.LatLng(cordX,cordY);
+        var cordX = 0,cordY = 0;
+
+        for (i = 0; i < locations.length; i++) {
+            cordX = cordX + locations[i][0];
+            cordY = cordY + locations[i][1];
+        }
+
+        cordX = cordX / locations.length;
+        cordY = cordY / locations.length;
+
+        var myLatlng = new google.maps.LatLng(cordX, cordY);
         var myOptions = {
             zoom: 14,
             center: myLatlng,
@@ -12,28 +22,14 @@ function googleMap(mapWrap){
         }
         var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
-        var contentString = '<div class="marker-test">'+googleText+'</div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            animation: google.maps.Animation.DROP, // анимация при загрузке карты
-            icon: footerImage //  иконка картинкой
-        });
-
-        /*анимация при клике на маркер*/
-        marker.addListener('click', toggleBounce);
-        function toggleBounce() {
-          if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-          } else {
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-          }
+        for (i = 0; i < locations.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+                map: map,
+                animation: google.maps.Animation.DROP, // анимация при загрузке карты
+                icon: footerImage //  иконка картинкой
+            });
         }
-        /*/анимация при клике на маркер*/
 
         /*По клику открываеться инфоблок*/
         google.maps.event.addListener(marker, 'click', function() {
