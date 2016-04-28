@@ -42,7 +42,10 @@ function googleMap(mapWrap){
 
 function buttonPrint(){
     $(".icon-print").click(function () {
-        print();
+       // print();
+       var doc = $(this).attr('href');
+       var win = window.open( doc, '_blank');
+        win.focus();
     });
 
     $('#download').attr('href',docs);
